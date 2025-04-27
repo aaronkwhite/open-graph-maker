@@ -1,6 +1,6 @@
 # Open Graph Maker
 
-
+![Ron Swanson OG Image](https://github.com/aaronkwhite/open-graph-maker/blob/main/output/ron-swanson.png?raw=true)
 
 **Dynamic Open Graph social preview images made simple.**
 
@@ -114,7 +114,7 @@ node generate-og-images.js --limit 5
 ```
 open-graph-maker/
 ├── fonts/                      # Required font files
-├── og-images/                  # Output directory for generated images
+├── output/                     # Output directory for generated images
 ├── generate-og-images.js       # Main generation script
 ├── data.json                   # Your input data
 ├── template.png                # Background template image
@@ -141,5 +141,5 @@ See [LICENSE](./LICENSE) for full details.
 
 ## ✨ Credits
 
-Created by [Your Name Here](https://github.com/yourhandle).  
+Created by [Aaron K. White](https://github.com/aaronkwhite).  
 PRs, forks, stars, and collaborations are welcome! 🚀
