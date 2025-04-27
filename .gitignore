@@ -7,10 +7,8 @@
 .pnp.js
 
 # Output directories
-/output
 /dist
 /build
-/og-images
 
 # Environment variables
 .env
