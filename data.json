@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "title": "Ron Swanson",
+      "tagline": "Give me all the bacon and eggs you have. And a glass of Scotch.",
+      "description": "Director of the Parks Department. Lover of woodworking, whiskey, and freedom."
+    },
+    {
+      "title": "Leslie Knope",
+      "tagline": "Friends, waffles, and work. But work has to come third.",
+      "description": "Deputy Director of Parks and Recreation. Binder enthusiast and eternal optimist."
+    },
+    {
+      "title": "Andy Dwyer",
+      "tagline": "Burt Macklin, FBI!",
+      "description": "Shoeshiner, rockstar, and part-time secret agent. Lead singer of Mouse Rat."
+    }
+  ]
+}
