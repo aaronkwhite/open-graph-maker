@@ -29,6 +29,55 @@ Before running `open-graph-maker`, make sure you have:
 
 ---
 
+## 🎨 Setting Up Your Template
+
+To create beautiful Open Graph images with `open-graph-maker`, you'll need a **base template image** that defines your static layout.
+
+### 1. Create a Base Template (Recommended: Figma)
+
+- **Design your layout** in Figma (or your preferred design tool).
+- Keep all **static elements** — like background colors, logos, or permanent text (example: "Tie. Fish. Repeat.").
+- **Remove dynamic content** — such as the title, tagline, and description.
+- Optionally, **leave empty text boxes** positioned and styled where dynamic content will be inserted later. (This helps guide your Node script.)
+
+> Example:  
+> Static elements = Logo, background, branding text  
+> Dynamic elements = Pattern title, tagline, description
+
+### 2. Export the Base Template
+
+- Export the base layout as a **PNG** or **JPG** file.
+- Place it in your project directory (example: `template.png`).
+
+### 3. Integrate the Template in Node-Canvas
+
+In your Node.js script:
+
+- **Load the base template** as the background image.
+- **Draw dynamic text** onto the canvas at the exact X/Y positions you designed in Figma.
+- **Match font families, sizes, colors, and spacing** based on your original design.
+
+You will need to know:
+- X and Y coordinates for each text block
+- Font sizes and line heights
+- Font families and weights
+- Text alignment and color codes
+
+### 4. Handling Pattern Illustrations (Optional)
+
+If your Open Graph images also include a pattern-specific illustration:
+
+- **Shared Illustration**:  
+  If all patterns use the same graphic, embed it directly into the base template.
+
+- **Dynamic Illustrations**:  
+  If each pattern has its own image, load the corresponding fly image dynamically in your Node script, and position it based on your layout.
+
+---
+
+Would you like a sample Node-Canvas code snippet showing exactly how to load a template and position the text dynamically?  
+*(It would make this section even more actionable!)* 🚀
+
 ## 📄 Data Format
 
 The `data.json` file must be structured as an array of objects under a `data` key, where each object includes:
