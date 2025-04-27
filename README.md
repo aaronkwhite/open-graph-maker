@@ -17,8 +17,6 @@
 - 📦 Easy JSON-based content input
 - 📂 Outputs high-quality PNG files to a local directory
 
----
-
 ## ⚡ Prerequisites
 
 Before running `open-graph-maker`, make sure you have:
@@ -27,8 +25,6 @@ Before running `open-graph-maker`, make sure you have:
 - **Required fonts** placed inside the `/fonts` directory
 - **A `data.json` file** containing your input data
 
----
-
 ## 🎨 Setting Up Your Template
 
 To create beautiful Open Graph images with `open-graph-maker`, you'll need a **base template image** that defines your static layout.
@@ -36,47 +32,42 @@ To create beautiful Open Graph images with `open-graph-maker`, you'll need a **b
 ### 1. Create a Base Template (Recommended: Figma)
 
 - **Design your layout** in Figma (or your preferred design tool).
-- Keep all **static elements** — like background colors, logos, or permanent text (example: "Tie. Fish. Repeat.").
-- **Remove dynamic content** — such as the title, tagline, and description.
-- Optionally, **leave empty text boxes** positioned and styled where dynamic content will be inserted later. (This helps guide your Node script.)
+- Keep all **static elements** — such as background colors, logos, decorative text, or branding.
+- **Remove dynamic content** — such as the title, tagline, and description that will change for each image.
+- Optionally, **leave empty text boxes** positioned and styled where dynamic content will be inserted later. (This helps guide your script.)
 
 > Example:  
-> Static elements = Logo, background, branding text  
-> Dynamic elements = Pattern title, tagline, description
+> Static elements = Logo, background, permanent brand slogans  
+> Dynamic elements = Title, tagline, description for each page or item
 
 ### 2. Export the Base Template
 
 - Export the base layout as a **PNG** or **JPG** file.
-- Place it in your project directory (example: `template.png`).
+- Save it into your project directory (e.g., `template.png`).
 
 ### 3. Integrate the Template in Node-Canvas
 
 In your Node.js script:
 
 - **Load the base template** as the background image.
-- **Draw dynamic text** onto the canvas at the exact X/Y positions you designed in Figma.
-- **Match font families, sizes, colors, and spacing** based on your original design.
+- **Draw dynamic text** onto the canvas at the exact X/Y positions you designed.
+- **Match font families, sizes, colors, and alignments** based on your original design.
 
 You will need to know:
 - X and Y coordinates for each text block
-- Font sizes and line heights
+- Font sizes, line heights, and text spacing
 - Font families and weights
 - Text alignment and color codes
 
-### 4. Handling Pattern Illustrations (Optional)
+### 4. Handling Dynamic Images (Optional)
 
-If your Open Graph images also include a pattern-specific illustration:
+If your Open Graph images also need an illustration, avatar, product image, or other dynamic graphic:
 
-- **Shared Illustration**:  
-  If all patterns use the same graphic, embed it directly into the base template.
+- **Shared Graphic**:  
+  If all images use the same graphic, embed it directly into your base template.
 
-- **Dynamic Illustrations**:  
-  If each pattern has its own image, load the corresponding fly image dynamically in your Node script, and position it based on your layout.
-
----
-
-Would you like a sample Node-Canvas code snippet showing exactly how to load a template and position the text dynamically?  
-*(It would make this section even more actionable!)* 🚀
+- **Dynamic Graphic**:  
+  If each image has a different graphic, dynamically load the appropriate image in your Node script and position it accordingly.
 
 ## 📄 Data Format
 
